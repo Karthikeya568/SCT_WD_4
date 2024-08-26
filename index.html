@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do Web App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-animation">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+    </div>
+    <div class="container">
+        <h1>The Online To-Do Web-Application</h1>
+        <form id="task-form">
+            <input type="text" id="task-input" placeholder="Enter a new task" required>
+            <input type="datetime-local" id="task-date" required>
+            <select id="task-priority">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+            <button type="submit">Add Task</button>
+        </form>
+        <div class="filter-sort">
+            <select id="filter-priority">
+                <option value="all">All Priorities</option>
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+            <select id="sort-by">
+                <option value="date">Sort by Date</option>
+                <option value="priority">Sort by Priority</option>
+            </select>
+        </div>
+        <ul id="task-list"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
